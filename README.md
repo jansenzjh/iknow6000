@@ -24,8 +24,8 @@ This Python script fetches "goal" data from the iKnow.jp API and converts it int
 
 1.  **Clone this repository** (or download `iknow.py`):
     ```bash
-    git clone [repository_url]
-    cd [repository_directory]
+    git clone https://github.com/jansenzjh/iknow6000
+    cd iknow6000
     ```
 2.  **Run the script**:
     ```bash
@@ -43,6 +43,8 @@ After running the script, a new directory named `iknow_html_output` will be crea
 *   `style.css` and `script.js`: Supporting files for styling and interactivity of the generated HTML pages.
 
 To view the generated content, simply open `iknow_html_output/index.html` in your web browser. 🖥️
+
+You can access to latest version online [here](https://jansenzjh.github.io/iknow6000/iknow_html_output/)
 
 ## Contributing 🤝
 

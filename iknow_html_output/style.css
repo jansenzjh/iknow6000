@@ -86,7 +86,7 @@ h1 {
     margin: 3px 0;
 }
 .sentence .cue-text {
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #444;
 }
 .sentence .cue-text strong {
@@ -141,4 +141,23 @@ h1 {
 }
 .index-list li a:hover {
     text-decoration: underline;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
 }

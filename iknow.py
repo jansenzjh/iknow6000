@@ -53,6 +53,7 @@ def generate_html(data):
         <script src="script.js" defer></script>
     </head>
     <body>
+        <a href="index.html" class="home-button">Home</a>
         <div class="container">
             <h1>{data.get('title', 'iKnow! Goal')}</h1>
             <div class="goal-info">
