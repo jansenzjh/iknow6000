@@ -153,9 +153,6 @@ h1 {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    position: absolute;
-    top: 15px;
-    right: 15px;
 }
 
 .home-button:hover {

@@ -53,7 +53,7 @@ def generate_html(data):
         <script src="script.js" defer></script>
     </head>
     <body>
-        <a href="index.html" class="home-button">Home</a>
+        <div><a href="index.html" class="home-button">Home</a></div>
         <div class="container">
             <h1>{data.get('title', 'iKnow! Goal')}</h1>
             <div class="goal-info">
@@ -94,7 +94,7 @@ def generate_html(data):
         if item_sound:
             html += f"""
                     <p class="audio-player">
-                        <audio controls>
+                        <audio controls preload="none">
                             <source src="{item_sound}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
@@ -129,7 +129,7 @@ def generate_html(data):
             if sentence_sound:
                 html += f"""
                         <p class="audio-player">
-                            <audio controls>
+                            <audio controls preload="none">
                                 <source src="{sentence_sound}" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
@@ -174,11 +174,11 @@ if __name__ == "__main__":
             <h1>iKnow! Goals Index</h1>
     """
 
-    # Group files by the first 20 characters of their display title
+    # Group files by the first 18 characters of their display title
     grouped_files = {}
     for filename in sorted(generated_html_files):
         display_title = os.path.splitext(filename)[0].replace('_', ' ')
-        group_key = display_title[:20].strip()
+        group_key = display_title[:18].strip()
         if group_key not in grouped_files:
             grouped_files[group_key] = []
         grouped_files[group_key].append((display_title, filename))
