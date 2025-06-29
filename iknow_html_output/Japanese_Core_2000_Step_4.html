@@ -10,7 +10,11 @@
         <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
-        <div><a href="index.html" class="home-button">Home</a></div>
+        <div class="top-buttons">
+            <button id="home-btn" onclick="location.href='index.html'">Home</button>
+            <button id="clear-marker-btn">Clear Marker</button>
+            <button id="go-to-marker-btn">Go to Marked Item</button>
+        </div>
         <div class="container">
             <h1>Japanese Core 2000: Step 4</h1>
             <div class="goal-info">
@@ -20,9 +24,10 @@
                 <p><strong>Sentences Count:</strong> 200</p>
             </div>
     
-            <div class="item-section">
+            <div class="item-section" id="item-貯金">
                 <div class="item-header">
                     <h2>貯金 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-貯金">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> money saved up</p>
@@ -79,9 +84,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-バイク">
                 <div class="item-header">
                     <h2>バイク <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-バイク">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> motorcycle</p>
@@ -138,9 +144,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-預かる">
                 <div class="item-header">
                     <h2>預かる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-預かる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> take care of, keep</p>
@@ -197,9 +204,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-オレンジ">
                 <div class="item-header">
                     <h2>オレンジ <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-オレンジ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> orange</p>
@@ -256,9 +264,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-噛む">
                 <div class="item-header">
                     <h2>噛む <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-噛む">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bite, chew</p>
@@ -315,9 +324,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-きつい">
                 <div class="item-header">
                     <h2>きつい <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-きつい">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> tight, tough</p>
@@ -374,9 +384,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-越える">
                 <div class="item-header">
                     <h2>越える <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-越える">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go over, go across</p>
@@ -433,9 +444,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-小包">
                 <div class="item-header">
                     <h2>小包 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-小包">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> parcel, package</p>
@@ -492,9 +504,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-新年">
                 <div class="item-header">
                     <h2>新年 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-新年">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> new year</p>
@@ -551,9 +564,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-配達">
                 <div class="item-header">
                     <h2>配達 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-配達">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> delivery</p>
@@ -610,9 +624,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-動物園">
                 <div class="item-header">
                     <h2>動物園 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-動物園">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> zoo</p>
@@ -669,9 +684,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-封筒">
                 <div class="item-header">
                     <h2>封筒 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-封筒">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> envelope</p>
@@ -728,9 +744,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-危ない">
                 <div class="item-header">
                     <h2>危ない <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-危ない">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> dangerous</p>
@@ -787,9 +804,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-テキスト">
                 <div class="item-header">
                     <h2>テキスト <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-テキスト">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> text, textbook</p>
@@ -846,9 +864,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ビニール">
                 <div class="item-header">
                     <h2>ビニール <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ビニール">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> plastic, vinyl</p>
@@ -905,9 +924,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-アルバム">
                 <div class="item-header">
                     <h2>アルバム <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-アルバム">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> album</p>
@@ -964,9 +984,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-水泳">
                 <div class="item-header">
                     <h2>水泳 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-水泳">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> swimming</p>
@@ -1023,9 +1044,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-混む">
                 <div class="item-header">
                     <h2>混む <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-混む">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> be crowded, be congested</p>
@@ -1082,9 +1104,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-スカート">
                 <div class="item-header">
                     <h2>スカート <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-スカート">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> skirt</p>
@@ -1141,9 +1164,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-取れる">
                 <div class="item-header">
                     <h2>取れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-取れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> come off, be removed</p>
@@ -1200,9 +1224,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ペン">
                 <div class="item-header">
                     <h2>ペン <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ペン">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pen</p>
@@ -1259,9 +1284,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-物">
                 <div class="item-header">
                     <h2>物 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-物">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> thing, object</p>
@@ -1318,9 +1344,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-郵便">
                 <div class="item-header">
                     <h2>郵便 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-郵便">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> mail service, postal mail</p>
@@ -1377,9 +1404,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-割れる">
                 <div class="item-header">
                     <h2>割れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-割れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> crack, split</p>
@@ -1436,9 +1464,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-駅員">
                 <div class="item-header">
                     <h2>駅員 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-駅員">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> station attendant</p>
@@ -1495,9 +1524,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-おしゃべり">
                 <div class="item-header">
                     <h2>おしゃべり <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-おしゃべり">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> talkative, chatty</p>
@@ -1554,9 +1584,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-緑色">
                 <div class="item-header">
                     <h2>緑色 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-緑色">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> green color</p>
@@ -1613,9 +1644,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-毎朝">
                 <div class="item-header">
                     <h2>毎朝 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-毎朝">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> every morning</p>
@@ -1672,9 +1704,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-曲げる">
                 <div class="item-header">
                     <h2>曲げる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-曲げる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bend (something)</p>
@@ -1731,9 +1764,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-きっと">
                 <div class="item-header">
                     <h2>きっと <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-きっと">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> surely, certainly</p>
@@ -1790,9 +1824,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-理科">
                 <div class="item-header">
                     <h2>理科 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-理科">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> science (school subject)</p>
@@ -1849,9 +1884,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-下着">
                 <div class="item-header">
                     <h2>下着 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-下着">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> underwear</p>
@@ -1908,9 +1944,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-太る">
                 <div class="item-header">
                     <h2>太る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-太る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> grow fat, gain weight</p>
@@ -1967,9 +2004,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-冷房">
                 <div class="item-header">
                     <h2>冷房 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-冷房">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> air conditioning (cooling)</p>
@@ -2026,9 +2064,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-別れる">
                 <div class="item-header">
                     <h2>別れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-別れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> separate, part</p>
@@ -2085,9 +2124,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-空く">
                 <div class="item-header">
                     <h2>空く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-空く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> become available or vacant</p>
@@ -2144,9 +2184,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-出掛ける">
                 <div class="item-header">
                     <h2>出掛ける <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-出掛ける">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go out, leave home</p>
@@ -2203,9 +2244,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-毎晩">
                 <div class="item-header">
                     <h2>毎晩 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-毎晩">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> every evening</p>
@@ -2262,9 +2304,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-指輪">
                 <div class="item-header">
                     <h2>指輪 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-指輪">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ring</p>
@@ -2321,9 +2364,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-腐る">
                 <div class="item-header">
                     <h2>腐る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-腐る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> rot, go bad</p>
@@ -2380,9 +2424,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-貧乏">
                 <div class="item-header">
                     <h2>貧乏 <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-貧乏">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> poverty, destitution</p>
@@ -2439,9 +2484,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-おしゃれ">
                 <div class="item-header">
                     <h2>おしゃれ <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-おしゃれ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> trendy, fashionable</p>
@@ -2498,9 +2544,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-休憩">
                 <div class="item-header">
                     <h2>休憩 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-休憩">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> break, rest</p>
@@ -2557,9 +2604,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-舌">
                 <div class="item-header">
                     <h2>舌 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-舌">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> tongue</p>
@@ -2616,9 +2664,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ジュース">
                 <div class="item-header">
                     <h2>ジュース <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ジュース">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> juice</p>
@@ -2675,9 +2724,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ゼロ">
                 <div class="item-header">
                     <h2>ゼロ <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ゼロ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> zero, none (loan word)</p>
@@ -2734,9 +2784,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-朝刊">
                 <div class="item-header">
                     <h2>朝刊 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-朝刊">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> morning edition paper</p>
@@ -2793,9 +2844,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-丁寧">
                 <div class="item-header">
                     <h2>丁寧 <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-丁寧">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> polite, careful</p>
@@ -2852,9 +2904,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-苦手">
                 <div class="item-header">
                     <h2>苦手 <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-苦手">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> not good at, be bad at</p>
@@ -2911,9 +2964,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-日">
                 <div class="item-header">
                     <h2>日 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-日">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> (specific) day, sun, daytime</p>
@@ -2970,9 +3024,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-引っ越し">
                 <div class="item-header">
                     <h2>引っ越し <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-引っ越し">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> moving (house)</p>
@@ -3029,9 +3084,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-歩道">
                 <div class="item-header">
                     <h2>歩道 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-歩道">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> sidewalk, pavement</p>
@@ -3088,9 +3144,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-折れる">
                 <div class="item-header">
                     <h2>折れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-折れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> break, snap</p>
@@ -3147,9 +3204,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-見送り">
                 <div class="item-header">
                     <h2>見送り <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-見送り">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> send-off</p>
@@ -3206,9 +3264,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-夕刊">
                 <div class="item-header">
                     <h2>夕刊 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-夕刊">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> evening edition paper</p>
@@ -3265,9 +3324,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-この間">
                 <div class="item-header">
                     <h2>この間 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-この間">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> the other day, not so long ago</p>
@@ -3324,9 +3384,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-冷える">
                 <div class="item-header">
                     <h2>冷える <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-冷える">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> cool down, get chilled</p>
@@ -3383,9 +3444,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ピンク">
                 <div class="item-header">
                     <h2>ピンク <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ピンク">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pink</p>
@@ -3442,9 +3504,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-グラス">
                 <div class="item-header">
                     <h2>グラス <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-グラス">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> glass</p>
@@ -3501,9 +3564,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-毛">
                 <div class="item-header">
                     <h2>毛 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-毛">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hair, down</p>
@@ -3560,9 +3624,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-黒板">
                 <div class="item-header">
                     <h2>黒板 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-黒板">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> blackboard</p>
@@ -3619,9 +3684,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-積もる">
                 <div class="item-header">
                     <h2>積もる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-積もる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pile up</p>
@@ -3678,9 +3744,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-半年">
                 <div class="item-header">
                     <h2>半年 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-半年">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> half a year</p>
@@ -3737,9 +3804,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-現在">
                 <div class="item-header">
                     <h2>現在 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-現在">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> the present, present time</p>
@@ -3796,9 +3864,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-利用">
                 <div class="item-header">
                     <h2>利用 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-利用">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> utilization, usage</p>
@@ -3855,9 +3924,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-方法">
                 <div class="item-header">
                     <h2>方法 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-方法">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> method, procedure</p>
@@ -3914,9 +3984,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-中心">
                 <div class="item-header">
                     <h2>中心 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-中心">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> center (of a circle, etc.), core</p>
@@ -3973,9 +4044,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-明らか">
                 <div class="item-header">
                     <h2>明らか <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-明らか">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> clear, obvious</p>
@@ -4032,9 +4104,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-社長">
                 <div class="item-header">
                     <h2>社長 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-社長">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> president (of a company)</p>
@@ -4091,9 +4164,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ほぼ">
                 <div class="item-header">
                     <h2>ほぼ <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-ほぼ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> almost, nearly</p>
@@ -4150,9 +4224,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-商品">
                 <div class="item-header">
                     <h2>商品 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-商品">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> goods, commodities</p>
@@ -4209,9 +4284,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-大型">
                 <div class="item-header">
                     <h2>大型 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-大型">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> large, large scale</p>
@@ -4268,9 +4344,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-限る">
                 <div class="item-header">
                     <h2>限る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-限る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> be limited to</p>
@@ -4327,9 +4404,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-記録">
                 <div class="item-header">
                     <h2>記録 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-記録">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> record, documentation</p>
@@ -4386,9 +4464,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-具体的">
                 <div class="item-header">
                     <h2>具体的 <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-具体的">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> concrete, specific</p>
@@ -4445,9 +4524,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-効果">
                 <div class="item-header">
                     <h2>効果 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-効果">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> effect, result</p>
@@ -4504,9 +4584,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-公開">
                 <div class="item-header">
                     <h2>公開 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-公開">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> opening (to the public)</p>
@@ -4563,9 +4644,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-作品">
                 <div class="item-header">
                     <h2>作品 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-作品">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> work of art, creation</p>
@@ -4622,9 +4704,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-迫る">
                 <div class="item-header">
                     <h2>迫る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-迫る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> close in on, approach</p>
@@ -4681,9 +4764,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-大会">
                 <div class="item-header">
                     <h2>大会 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-大会">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> tournament, event</p>
@@ -4740,9 +4824,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-背景">
                 <div class="item-header">
                     <h2>背景 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-背景">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> background, backdrop</p>
@@ -4799,9 +4884,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-文字">
                 <div class="item-header">
                     <h2>文字 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-文字">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> character, letter, writing</p>
@@ -4858,9 +4944,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-規則">
                 <div class="item-header">
                     <h2>規則 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-規則">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> rule, regulation</p>
@@ -4917,9 +5004,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-近所">
                 <div class="item-header">
                     <h2>近所 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-近所">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> neighborhood</p>
@@ -4976,9 +5064,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-グラフ">
                 <div class="item-header">
                     <h2>グラフ <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-グラフ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> chart, graph</p>
@@ -5035,9 +5124,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-首都">
                 <div class="item-header">
                     <h2>首都 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-首都">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> capital</p>
@@ -5094,9 +5184,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-減らす">
                 <div class="item-header">
                     <h2>減らす <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-減らす">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> reduce (something)</p>
@@ -5153,9 +5244,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-隠れる">
                 <div class="item-header">
                     <h2>隠れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-隠れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hide</p>
@@ -5212,9 +5304,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-美術館">
                 <div class="item-header">
                     <h2>美術館 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-美術館">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> art museum</p>
@@ -5271,9 +5364,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ばか">
                 <div class="item-header">
                     <h2>ばか <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-ばか">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> foolish, stupid</p>
@@ -5330,9 +5424,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-暇">
                 <div class="item-header">
                     <h2>暇 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-暇">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> free time, spare time</p>
@@ -5389,9 +5484,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-絵葉書">
                 <div class="item-header">
                     <h2>絵葉書 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-絵葉書">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> picture postcard</p>
@@ -5448,9 +5544,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-あんなに">
                 <div class="item-header">
                     <h2>あんなに <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-あんなに">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> that much, such</p>
@@ -5507,9 +5604,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-行き">
                 <div class="item-header">
                     <h2>行き <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-行き">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> going, outbound (flight, train, etc.)</p>
@@ -5566,9 +5664,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-通勤">
                 <div class="item-header">
                     <h2>通勤 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-通勤">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> commute</p>
@@ -5625,9 +5724,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ちゃんと">
                 <div class="item-header">
                     <h2>ちゃんと <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-ちゃんと">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> correctly, properly</p>
@@ -5684,9 +5784,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-のんびり">
                 <div class="item-header">
                     <h2>のんびり <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-のんびり">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> in a relaxed manner, leisurely</p>
@@ -5743,9 +5844,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-緊張">
                 <div class="item-header">
                     <h2>緊張 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-緊張">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> tension, strain</p>
@@ -5802,9 +5904,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-気付く">
                 <div class="item-header">
                     <h2>気付く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-気付く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> notice, realize</p>
@@ -5861,9 +5964,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-物語">
                 <div class="item-header">
                     <h2>物語 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-物語">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> story, tale</p>

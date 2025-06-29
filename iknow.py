@@ -54,7 +54,11 @@ def generate_html(data):
         <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
-        <div><a href="index.html" class="home-button">Home</a></div>
+        <div class="top-buttons">
+            <button id="home-btn" onclick="location.href='index.html'">Home</button>
+            <button id="clear-marker-btn">Clear Marker</button>
+            <button id="go-to-marker-btn">Go to Marked Item</button>
+        </div>
         <div class="container">
             <h1>{data.get('title', 'iKnow! Goal')}</h1>
             <div class="goal-info">
@@ -75,11 +79,15 @@ def generate_html(data):
         item_text = cue.get('text', 'N/A')
         part_of_speech = cue.get('part_of_speech')
         part_of_speech_display = f'<span class="part-of-speech">({part_of_speech})</span>' if part_of_speech else ''
+        
+        # Generate a unique ID for each goal_item
+        item_id = f"item-{goal_item.get('id', item_text.replace(' ', '_'))}" # Using goal_item.id if available, otherwise item_text
 
         html += f"""
-            <div class="item-section">
+            <div class="item-section" id="{item_id}">
                 <div class="item-header">
                     <h2>{item_text} {part_of_speech_display}</h2>
+                    <button class="mark-button" data-item-id="{item_id}">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> {response_text}</p>

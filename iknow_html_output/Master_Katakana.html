@@ -10,7 +10,11 @@
         <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
-        <div><a href="index.html" class="home-button">Home</a></div>
+        <div class="top-buttons">
+            <button id="home-btn" onclick="location.href='index.html'">Home</button>
+            <button id="clear-marker-btn">Clear Marker</button>
+            <button id="go-to-marker-btn">Go to Marked Item</button>
+        </div>
         <div class="container">
             <h1>Master Katakana</h1>
             <div class="goal-info">
@@ -20,9 +24,10 @@
                 <p><strong>Sentences Count:</strong> 0</p>
             </div>
     
-            <div class="item-section">
+            <div class="item-section" id="item-ア">
                 <div class="item-header">
                     <h2>ア <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ア">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> a</p>
@@ -45,9 +50,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-イ">
                 <div class="item-header">
                     <h2>イ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-イ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> i</p>
@@ -70,9 +76,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ウ">
                 <div class="item-header">
                     <h2>ウ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ウ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> u</p>
@@ -95,9 +102,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-エ">
                 <div class="item-header">
                     <h2>エ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-エ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> e</p>
@@ -120,9 +128,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-オ">
                 <div class="item-header">
                     <h2>オ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-オ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> o</p>
@@ -145,9 +154,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-カ">
                 <div class="item-header">
                     <h2>カ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-カ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ka</p>
@@ -170,9 +180,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-キ">
                 <div class="item-header">
                     <h2>キ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-キ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ki</p>
@@ -195,9 +206,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ク">
                 <div class="item-header">
                     <h2>ク <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ク">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ku</p>
@@ -220,9 +232,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ケ">
                 <div class="item-header">
                     <h2>ケ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ケ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ke</p>
@@ -245,9 +258,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-コ">
                 <div class="item-header">
                     <h2>コ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-コ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ko</p>
@@ -270,9 +284,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-サ">
                 <div class="item-header">
                     <h2>サ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-サ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> sa</p>
@@ -295,9 +310,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-シ">
                 <div class="item-header">
                     <h2>シ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-シ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> shi</p>
@@ -320,9 +336,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ス">
                 <div class="item-header">
                     <h2>ス <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ス">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> su</p>
@@ -345,9 +362,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-セ">
                 <div class="item-header">
                     <h2>セ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-セ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> se</p>
@@ -370,9 +388,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ソ">
                 <div class="item-header">
                     <h2>ソ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ソ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> so</p>
@@ -395,9 +414,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-タ">
                 <div class="item-header">
                     <h2>タ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-タ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ta</p>
@@ -420,9 +440,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-チ">
                 <div class="item-header">
                     <h2>チ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-チ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> chi</p>
@@ -445,9 +466,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ツ">
                 <div class="item-header">
                     <h2>ツ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ツ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> tsu</p>
@@ -470,9 +492,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-テ">
                 <div class="item-header">
                     <h2>テ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-テ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> te</p>
@@ -495,9 +518,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ト">
                 <div class="item-header">
                     <h2>ト <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ト">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> to</p>
@@ -520,9 +544,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ナ">
                 <div class="item-header">
                     <h2>ナ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ナ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> na</p>
@@ -545,9 +570,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ニ">
                 <div class="item-header">
                     <h2>ニ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ニ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ni</p>
@@ -570,9 +596,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヌ">
                 <div class="item-header">
                     <h2>ヌ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヌ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> nu</p>
@@ -595,9 +622,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ネ">
                 <div class="item-header">
                     <h2>ネ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ネ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ne</p>
@@ -620,9 +648,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ノ">
                 <div class="item-header">
                     <h2>ノ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ノ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> no</p>
@@ -645,9 +674,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ハ">
                 <div class="item-header">
                     <h2>ハ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ハ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ha</p>
@@ -670,9 +700,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヒ">
                 <div class="item-header">
                     <h2>ヒ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヒ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hi</p>
@@ -695,9 +726,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-フ">
                 <div class="item-header">
                     <h2>フ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-フ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> fu</p>
@@ -720,9 +752,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヘ">
                 <div class="item-header">
                     <h2>ヘ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヘ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> he</p>
@@ -745,9 +778,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ホ">
                 <div class="item-header">
                     <h2>ホ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ホ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ho</p>
@@ -770,9 +804,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-マ">
                 <div class="item-header">
                     <h2>マ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-マ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ma</p>
@@ -795,9 +830,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ミ">
                 <div class="item-header">
                     <h2>ミ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ミ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> mi</p>
@@ -820,9 +856,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ム">
                 <div class="item-header">
                     <h2>ム <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ム">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> mu</p>
@@ -845,9 +882,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-メ">
                 <div class="item-header">
                     <h2>メ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-メ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> me</p>
@@ -870,9 +908,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-モ">
                 <div class="item-header">
                     <h2>モ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-モ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> mo</p>
@@ -895,9 +934,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヤ">
                 <div class="item-header">
                     <h2>ヤ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヤ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ya</p>
@@ -920,9 +960,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ユ">
                 <div class="item-header">
                     <h2>ユ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ユ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> yu</p>
@@ -945,9 +986,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヨ">
                 <div class="item-header">
                     <h2>ヨ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヨ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> yo</p>
@@ -970,9 +1012,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ラ">
                 <div class="item-header">
                     <h2>ラ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ラ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ra</p>
@@ -995,9 +1038,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-リ">
                 <div class="item-header">
                     <h2>リ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-リ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ri</p>
@@ -1020,9 +1064,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ル">
                 <div class="item-header">
                     <h2>ル <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ル">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ru</p>
@@ -1045,9 +1090,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-レ">
                 <div class="item-header">
                     <h2>レ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-レ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> re</p>
@@ -1070,9 +1116,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ロ">
                 <div class="item-header">
                     <h2>ロ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ロ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ro</p>
@@ -1095,9 +1142,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ワ">
                 <div class="item-header">
                     <h2>ワ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ワ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> wa</p>
@@ -1120,9 +1168,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヲ">
                 <div class="item-header">
                     <h2>ヲ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヲ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> wo</p>
@@ -1145,9 +1194,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ン">
                 <div class="item-header">
                     <h2>ン <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ン">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> n</p>
@@ -1170,9 +1220,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ガ">
                 <div class="item-header">
                     <h2>ガ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ガ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ga</p>
@@ -1195,9 +1246,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ギ">
                 <div class="item-header">
                     <h2>ギ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ギ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> gi</p>
@@ -1220,9 +1272,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-グ">
                 <div class="item-header">
                     <h2>グ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-グ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> gu</p>
@@ -1245,9 +1298,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ゲ">
                 <div class="item-header">
                     <h2>ゲ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ゲ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ge</p>
@@ -1270,9 +1324,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ゴ">
                 <div class="item-header">
                     <h2>ゴ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ゴ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go</p>
@@ -1295,9 +1350,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ザ">
                 <div class="item-header">
                     <h2>ザ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ザ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> za</p>
@@ -1320,9 +1376,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ジ">
                 <div class="item-header">
                     <h2>ジ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ジ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ji</p>
@@ -1345,9 +1402,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ズ">
                 <div class="item-header">
                     <h2>ズ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ズ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> zu</p>
@@ -1370,9 +1428,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ゼ">
                 <div class="item-header">
                     <h2>ゼ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ゼ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ze</p>
@@ -1395,9 +1454,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ゾ">
                 <div class="item-header">
                     <h2>ゾ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ゾ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> zo</p>
@@ -1420,9 +1480,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ダ">
                 <div class="item-header">
                     <h2>ダ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ダ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> da</p>
@@ -1445,9 +1506,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヂ">
                 <div class="item-header">
                     <h2>ヂ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヂ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> di</p>
@@ -1470,9 +1532,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヅ">
                 <div class="item-header">
                     <h2>ヅ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヅ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> du</p>
@@ -1495,9 +1558,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-デ">
                 <div class="item-header">
                     <h2>デ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-デ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> de</p>
@@ -1520,9 +1584,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ド">
                 <div class="item-header">
                     <h2>ド <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ド">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> do</p>
@@ -1545,9 +1610,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-バ">
                 <div class="item-header">
                     <h2>バ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-バ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ba</p>
@@ -1570,9 +1636,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ビ">
                 <div class="item-header">
                     <h2>ビ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ビ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bi</p>
@@ -1595,9 +1662,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ブ">
                 <div class="item-header">
                     <h2>ブ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ブ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bu</p>
@@ -1620,9 +1688,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ベ">
                 <div class="item-header">
                     <h2>ベ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ベ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> be</p>
@@ -1645,9 +1714,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ボ">
                 <div class="item-header">
                     <h2>ボ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ボ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bo</p>
@@ -1670,9 +1740,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-パ">
                 <div class="item-header">
                     <h2>パ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-パ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pa</p>
@@ -1695,9 +1766,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ピ">
                 <div class="item-header">
                     <h2>ピ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ピ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pi</p>
@@ -1720,9 +1792,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-プ">
                 <div class="item-header">
                     <h2>プ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-プ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pu</p>
@@ -1745,9 +1818,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ペ">
                 <div class="item-header">
                     <h2>ペ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ペ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pe</p>
@@ -1770,9 +1844,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ポ">
                 <div class="item-header">
                     <h2>ポ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ポ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> po</p>
@@ -1795,9 +1870,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-キャ">
                 <div class="item-header">
                     <h2>キャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-キャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> kya</p>
@@ -1820,9 +1896,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-キュ">
                 <div class="item-header">
                     <h2>キュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-キュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> kyu</p>
@@ -1845,9 +1922,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-キョ">
                 <div class="item-header">
                     <h2>キョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-キョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> kyo</p>
@@ -1870,9 +1948,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ギャ">
                 <div class="item-header">
                     <h2>ギャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ギャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> gya</p>
@@ -1895,9 +1974,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ギュ">
                 <div class="item-header">
                     <h2>ギュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ギュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> gyu</p>
@@ -1920,9 +2000,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ギョ">
                 <div class="item-header">
                     <h2>ギョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ギョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> gyo</p>
@@ -1945,9 +2026,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-シャ">
                 <div class="item-header">
                     <h2>シャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-シャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> sha</p>
@@ -1970,9 +2052,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-シュ">
                 <div class="item-header">
                     <h2>シュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-シュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> shu</p>
@@ -1995,9 +2078,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ショ">
                 <div class="item-header">
                     <h2>ショ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ショ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> sho</p>
@@ -2020,9 +2104,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ジャ">
                 <div class="item-header">
                     <h2>ジャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ジャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ja</p>
@@ -2045,9 +2130,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ジュ">
                 <div class="item-header">
                     <h2>ジュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ジュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ju</p>
@@ -2070,9 +2156,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ジョ">
                 <div class="item-header">
                     <h2>ジョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ジョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> jo</p>
@@ -2095,9 +2182,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-チャ">
                 <div class="item-header">
                     <h2>チャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-チャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> cha</p>
@@ -2120,9 +2208,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-チュ">
                 <div class="item-header">
                     <h2>チュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-チュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> chu</p>
@@ -2145,9 +2234,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-チョ">
                 <div class="item-header">
                     <h2>チョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-チョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> cho</p>
@@ -2170,9 +2260,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ニャ">
                 <div class="item-header">
                     <h2>ニャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ニャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> nya</p>
@@ -2195,9 +2286,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ニュ">
                 <div class="item-header">
                     <h2>ニュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ニュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> nyu</p>
@@ -2220,9 +2312,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ニョ">
                 <div class="item-header">
                     <h2>ニョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ニョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> nyo</p>
@@ -2245,9 +2338,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヒャ">
                 <div class="item-header">
                     <h2>ヒャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヒャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hya</p>
@@ -2270,9 +2364,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヒュ">
                 <div class="item-header">
                     <h2>ヒュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヒュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hyu</p>
@@ -2295,9 +2390,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ヒョ">
                 <div class="item-header">
                     <h2>ヒョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ヒョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hyo</p>
@@ -2320,9 +2416,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ビャ">
                 <div class="item-header">
                     <h2>ビャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ビャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> bya</p>
@@ -2345,9 +2442,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ビュ">
                 <div class="item-header">
                     <h2>ビュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ビュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> byu</p>
@@ -2370,9 +2468,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ビョ">
                 <div class="item-header">
                     <h2>ビョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ビョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> byo</p>
@@ -2395,9 +2494,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ピャ">
                 <div class="item-header">
                     <h2>ピャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ピャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pya</p>
@@ -2420,9 +2520,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ピュ">
                 <div class="item-header">
                     <h2>ピュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ピュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pyu</p>
@@ -2445,9 +2546,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ピョ">
                 <div class="item-header">
                     <h2>ピョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ピョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> pyo</p>
@@ -2470,9 +2572,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ミャ">
                 <div class="item-header">
                     <h2>ミャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ミャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> mya</p>
@@ -2495,9 +2598,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ミュ">
                 <div class="item-header">
                     <h2>ミュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ミュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> myu</p>
@@ -2520,9 +2624,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-ミョ">
                 <div class="item-header">
                     <h2>ミョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-ミョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> myo</p>
@@ -2545,9 +2650,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-リャ">
                 <div class="item-header">
                     <h2>リャ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-リャ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> rya</p>
@@ -2570,9 +2676,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-リュ">
                 <div class="item-header">
                     <h2>リュ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-リュ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ryu</p>
@@ -2595,9 +2702,10 @@
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-リョ">
                 <div class="item-header">
                     <h2>リョ <span class="part-of-speech">(Kana)</span></h2>
+                    <button class="mark-button" data-item-id="item-リョ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> ryo</p>

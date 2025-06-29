@@ -10,7 +10,11 @@
         <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
-        <div><a href="index.html" class="home-button">Home</a></div>
+        <div class="top-buttons">
+            <button id="home-btn" onclick="location.href='index.html'">Home</button>
+            <button id="clear-marker-btn">Clear Marker</button>
+            <button id="go-to-marker-btn">Go to Marked Item</button>
+        </div>
         <div class="container">
             <h1>Japanese Core 1000: Step 1</h1>
             <div class="goal-info">
@@ -24,9 +28,10 @@ This will explain the basics of inputting Japanese.</p>
                 <p><strong>Sentences Count:</strong> 187</p>
             </div>
     
-            <div class="item-section">
+            <div class="item-section" id="item-行く">
                 <div class="item-header">
                     <h2>行く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-行く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go</p>
@@ -83,9 +88,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-見る">
                 <div class="item-header">
                     <h2>見る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-見る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> see, look at</p>
@@ -142,9 +148,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-多い">
                 <div class="item-header">
                     <h2>多い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-多い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> a lot of, many</p>
@@ -201,9 +208,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-家">
                 <div class="item-header">
                     <h2>家 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-家">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> home, household</p>
@@ -260,9 +268,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-これ">
                 <div class="item-header">
                     <h2>これ <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-これ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> this, this one</p>
@@ -319,9 +328,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-それ">
                 <div class="item-header">
                     <h2>それ <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-それ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> that, that one</p>
@@ -378,9 +388,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-私">
                 <div class="item-header">
                     <h2>私 <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-私">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> I (general)</p>
@@ -437,9 +448,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-仕事">
                 <div class="item-header">
                     <h2>仕事 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-仕事">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> work, job</p>
@@ -496,9 +508,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-いつ">
                 <div class="item-header">
                     <h2>いつ <span class="part-of-speech">(Interrogative)</span></h2>
+                    <button class="mark-button" data-item-id="item-いつ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> when</p>
@@ -555,9 +568,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-する">
                 <div class="item-header">
                     <h2>する <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-する">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> do, make</p>
@@ -614,9 +628,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-出る">
                 <div class="item-header">
                     <h2>出る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-出る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go out, leave</p>
@@ -673,9 +688,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-使う">
                 <div class="item-header">
                     <h2>使う <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-使う">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> use, make use of</p>
@@ -732,9 +748,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-所">
                 <div class="item-header">
                     <h2>所 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-所">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> place</p>
@@ -791,9 +808,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-作る">
                 <div class="item-header">
                     <h2>作る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-作る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> make, create</p>
@@ -850,9 +868,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-思う">
                 <div class="item-header">
                     <h2>思う <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-思う">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> think</p>
@@ -909,9 +928,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-持つ">
                 <div class="item-header">
                     <h2>持つ <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-持つ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> have, possess</p>
@@ -968,9 +988,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-買う">
                 <div class="item-header">
                     <h2>買う <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-買う">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> buy</p>
@@ -1027,9 +1048,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-時間">
                 <div class="item-header">
                     <h2>時間 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-時間">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> time, hour</p>
@@ -1086,9 +1108,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-知る">
                 <div class="item-header">
                     <h2>知る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-知る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> know</p>
@@ -1145,9 +1168,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-同じ">
                 <div class="item-header">
                     <h2>同じ <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-同じ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> same, identical</p>
@@ -1204,9 +1228,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-今">
                 <div class="item-header">
                     <h2>今 <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-今">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> now</p>
@@ -1263,9 +1288,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-新しい">
                 <div class="item-header">
                     <h2>新しい <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-新しい">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> new</p>
@@ -1322,9 +1348,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-なる">
                 <div class="item-header">
                     <h2>なる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-なる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> become</p>
@@ -1381,9 +1408,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-まだ">
                 <div class="item-header">
                     <h2>まだ <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-まだ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> (not) yet, still</p>
@@ -1440,9 +1468,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-あと">
                 <div class="item-header">
                     <h2>あと <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-あと">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> after</p>
@@ -1499,9 +1528,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-聞く">
                 <div class="item-header">
                     <h2>聞く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-聞く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hear, ask, listen</p>
@@ -1558,9 +1588,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-言う">
                 <div class="item-header">
                     <h2>言う <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-言う">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> say, tell</p>
@@ -1617,9 +1648,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-少ない">
                 <div class="item-header">
                     <h2>少ない <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-少ない">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> few, little</p>
@@ -1676,9 +1708,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-高い">
                 <div class="item-header">
                     <h2>高い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-高い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> high, tall</p>
@@ -1735,9 +1768,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-子供">
                 <div class="item-header">
                     <h2>子供 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-子供">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> child</p>
@@ -1794,9 +1828,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-そう">
                 <div class="item-header">
                     <h2>そう <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-そう">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> so, that way</p>
@@ -1853,9 +1888,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-もう">
                 <div class="item-header">
                     <h2>もう <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-もう">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> already, yet</p>
@@ -1912,9 +1948,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-学生">
                 <div class="item-header">
                     <h2>学生 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-学生">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> student</p>
@@ -1971,9 +2008,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-熱い">
                 <div class="item-header">
                     <h2>熱い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-熱い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> hot (to touch)</p>
@@ -2030,9 +2068,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-どうぞ">
                 <div class="item-header">
                     <h2>どうぞ <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-どうぞ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> please</p>
@@ -2089,9 +2128,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-午後">
                 <div class="item-header">
                     <h2>午後 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-午後">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> afternoon, p.m.</p>
@@ -2148,9 +2188,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-長い">
                 <div class="item-header">
                     <h2>長い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-長い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> long</p>
@@ -2207,9 +2248,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-本">
                 <div class="item-header">
                     <h2>本 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-本">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> book</p>
@@ -2266,9 +2308,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-今年">
                 <div class="item-header">
                     <h2>今年 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-今年">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> this year (colloquial)</p>
@@ -2325,9 +2368,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-よく">
                 <div class="item-header">
                     <h2>よく <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-よく">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> often, well</p>
@@ -2384,9 +2428,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-彼女">
                 <div class="item-header">
                     <h2>彼女 <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-彼女">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> she, girlfriend</p>
@@ -2443,9 +2488,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-どう">
                 <div class="item-header">
                     <h2>どう <span class="part-of-speech">(Interrogative)</span></h2>
+                    <button class="mark-button" data-item-id="item-どう">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> how, what</p>
@@ -2502,9 +2548,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-言葉">
                 <div class="item-header">
                     <h2>言葉 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-言葉">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> word, language</p>
@@ -2561,9 +2608,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-顔">
                 <div class="item-header">
                     <h2>顔 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-顔">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> face</p>
@@ -2620,9 +2668,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-終わる">
                 <div class="item-header">
                     <h2>終わる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-終わる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> finish, end</p>
@@ -2679,9 +2728,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-一つ">
                 <div class="item-header">
                     <h2>一つ <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-一つ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> one (thing)</p>
@@ -2738,9 +2788,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-あげる">
                 <div class="item-header">
                     <h2>あげる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-あげる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> give, offer (colloquial)</p>
@@ -2797,9 +2848,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-こう">
                 <div class="item-header">
                     <h2>こう <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-こう">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> like this, such</p>
@@ -2856,9 +2908,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-学校">
                 <div class="item-header">
                     <h2>学校 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-学校">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> school</p>
@@ -2915,9 +2968,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-くれる">
                 <div class="item-header">
                     <h2>くれる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-くれる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> be given</p>
@@ -2974,9 +3028,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-始める">
                 <div class="item-header">
                     <h2>始める <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-始める">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> start (something)</p>
@@ -3033,9 +3088,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-起きる">
                 <div class="item-header">
                     <h2>起きる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-起きる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> get up, get out of bed</p>
@@ -3092,9 +3148,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-春">
                 <div class="item-header">
                     <h2>春 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-春">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> spring</p>
@@ -3151,9 +3208,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-午前">
                 <div class="item-header">
                     <h2>午前 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-午前">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> morning, a.m.</p>
@@ -3210,9 +3268,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-別">
                 <div class="item-header">
                     <h2>別 <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-別">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> another, different</p>
@@ -3269,9 +3328,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-どこ">
                 <div class="item-header">
                     <h2>どこ <span class="part-of-speech">(Interrogative)</span></h2>
+                    <button class="mark-button" data-item-id="item-どこ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> where</p>
@@ -3328,9 +3388,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-部屋">
                 <div class="item-header">
                     <h2>部屋 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-部屋">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> room</p>
@@ -3387,9 +3448,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-若い">
                 <div class="item-header">
                     <h2>若い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-若い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> young</p>
@@ -3446,9 +3508,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-車">
                 <div class="item-header">
                     <h2>車 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-車">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> car, automobile</p>
@@ -3505,9 +3568,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-置く">
                 <div class="item-header">
                     <h2>置く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-置く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> put, place</p>
@@ -3564,9 +3628,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-住む">
                 <div class="item-header">
                     <h2>住む <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-住む">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> live, reside</p>
@@ -3623,9 +3688,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-働く">
                 <div class="item-header">
                     <h2>働く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-働く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> work</p>
@@ -3682,9 +3748,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-難しい">
                 <div class="item-header">
                     <h2>難しい <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-難しい">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> difficult</p>
@@ -3741,9 +3808,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-先生">
                 <div class="item-header">
                     <h2>先生 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-先生">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> teacher (colloquial)</p>
@@ -3800,9 +3868,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-立つ">
                 <div class="item-header">
                     <h2>立つ <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-立つ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> stand, rise</p>
@@ -3859,9 +3928,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-呼ぶ">
                 <div class="item-header">
                     <h2>呼ぶ <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-呼ぶ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> call, name</p>
@@ -3918,9 +3988,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-大学">
                 <div class="item-header">
                     <h2>大学 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-大学">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> university, college</p>
@@ -3977,9 +4048,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-安い">
                 <div class="item-header">
                     <h2>安い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-安い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> cheap, inexpensive</p>
@@ -4036,9 +4108,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-もっと">
                 <div class="item-header">
                     <h2>もっと <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-もっと">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> more</p>
@@ -4095,9 +4168,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-帰る">
                 <div class="item-header">
                     <h2>帰る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-帰る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> go back home</p>
@@ -4154,9 +4228,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-分かる">
                 <div class="item-header">
                     <h2>分かる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-分かる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> understand</p>
@@ -4213,9 +4288,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-広い">
                 <div class="item-header">
                     <h2>広い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-広い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> wide, big</p>
@@ -4272,9 +4348,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-数">
                 <div class="item-header">
                     <h2>数 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-数">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> number</p>
@@ -4331,9 +4408,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-近い">
                 <div class="item-header">
                     <h2>近い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-近い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> near, close</p>
@@ -4390,9 +4468,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-そこ">
                 <div class="item-header">
                     <h2>そこ <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-そこ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> there</p>
@@ -4449,9 +4528,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-走る">
                 <div class="item-header">
                     <h2>走る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-走る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> run</p>
@@ -4508,9 +4588,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-入れる">
                 <div class="item-header">
                     <h2>入れる <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-入れる">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> put in</p>
@@ -4567,9 +4648,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-教える">
                 <div class="item-header">
                     <h2>教える <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-教える">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> teach, tell</p>
@@ -4626,9 +4708,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-歩く">
                 <div class="item-header">
                     <h2>歩く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-歩く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> walk, go on foot</p>
@@ -4685,9 +4768,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-会う">
                 <div class="item-header">
                     <h2>会う <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-会う">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> meet</p>
@@ -4744,9 +4828,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-書く">
                 <div class="item-header">
                     <h2>書く <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-書く">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> write</p>
@@ -4803,9 +4888,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-頭">
                 <div class="item-header">
                     <h2>頭 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-頭">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> head</p>
@@ -4862,9 +4948,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-売る">
                 <div class="item-header">
                     <h2>売る <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-売る">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> sell</p>
@@ -4921,9 +5008,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-大好き">
                 <div class="item-header">
                     <h2>大好き <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-大好き">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> like (something) a lot</p>
@@ -4980,9 +5068,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-体">
                 <div class="item-header">
                     <h2>体 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-体">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> body, physique, physical condition</p>
@@ -5039,9 +5128,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-直ぐ">
                 <div class="item-header">
                     <h2>直ぐ <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-直ぐ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> at once, soon</p>
@@ -5098,9 +5188,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-飛ぶ">
                 <div class="item-header">
                     <h2>飛ぶ <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-飛ぶ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> fly</p>
@@ -5157,9 +5248,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-とても">
                 <div class="item-header">
                     <h2>とても <span class="part-of-speech">(Adverb)</span></h2>
+                    <button class="mark-button" data-item-id="item-とても">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> very (colloquial)</p>
@@ -5216,9 +5308,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-誰">
                 <div class="item-header">
                     <h2>誰 <span class="part-of-speech">(Interrogative)</span></h2>
+                    <button class="mark-button" data-item-id="item-誰">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> who</p>
@@ -5275,9 +5368,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-好き">
                 <div class="item-header">
                     <h2>好き <span class="part-of-speech">(Adjectival Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-好き">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> favorite, liked</p>
@@ -5334,9 +5428,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-読む">
                 <div class="item-header">
                     <h2>読む <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-読む">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> read</p>
@@ -5393,9 +5488,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-次">
                 <div class="item-header">
                     <h2>次 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-次">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> next</p>
@@ -5452,9 +5548,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-あなた">
                 <div class="item-header">
                     <h2>あなた <span class="part-of-speech">(Pronoun)</span></h2>
+                    <button class="mark-button" data-item-id="item-あなた">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> you</p>
@@ -5511,9 +5608,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-飲む">
                 <div class="item-header">
                     <h2>飲む <span class="part-of-speech">(Verb)</span></h2>
+                    <button class="mark-button" data-item-id="item-飲む">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> drink</p>
@@ -5570,9 +5668,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-古い">
                 <div class="item-header">
                     <h2>古い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-古い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> old</p>
@@ -5629,9 +5728,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-質問">
                 <div class="item-header">
                     <h2>質問 <span class="part-of-speech">(Verbal Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-質問">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> question</p>
@@ -5688,9 +5788,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-今日">
                 <div class="item-header">
                     <h2>今日 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-今日">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> today (colloquial)</p>
@@ -5747,9 +5848,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-友達">
                 <div class="item-header">
                     <h2>友達 <span class="part-of-speech">(Noun)</span></h2>
+                    <button class="mark-button" data-item-id="item-友達">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> friend, companion (colloquial)</p>
@@ -5806,9 +5908,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-早い">
                 <div class="item-header">
                     <h2>早い <span class="part-of-speech">(Adjective)</span></h2>
+                    <button class="mark-button" data-item-id="item-早い">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> early</p>
@@ -5865,9 +5968,10 @@ This will explain the basics of inputting Japanese.</p>
                 </div>
             </div>
         
-            <div class="item-section">
+            <div class="item-section" id="item-どれ">
                 <div class="item-header">
                     <h2>どれ <span class="part-of-speech">(Interrogative)</span></h2>
+                    <button class="mark-button" data-item-id="item-どれ">Mark as Learning</button>
                 </div>
                 <div class="item-details">
                     <p><strong>Response Text:</strong> what, which</p>

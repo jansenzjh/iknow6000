@@ -9,6 +9,8 @@ This Python script fetches "goal" data from the iKnow.jp API and converts it int
 *   **Audio Support**: Embeds audio for items and sentences if available. 🎧
 *   **Index Page**: Generates a main `index.html` file for easy navigation to all generated goal pages. 📖
 *   **Offline Access**: Once generated, all content can be viewed offline in your browser. 🌐
+*   **Learning Marker**: Mark your current learning progress with a "Mark as Learning" button on each item. This marker is saved in your browser's local storage.
+*   **Navigation & Management**: Easily clear your marker or jump directly to your last marked item using dedicated buttons at the top of each course page.
 
 ## How to Use 🛠️
 
@@ -45,6 +47,10 @@ After running the script, a new directory named `iknow_html_output` will be crea
 To view the generated content, simply open `iknow_html_output/index.html` in your web browser. 🖥️
 
 You can access to latest version online [here](https://jansenzjh.github.io/iknow6000/iknow_html_output/)
+
+## Disclaimer ⚠️
+
+Please note that the `iknow.py` script includes a reference to a personal Umami analytics URL (`https://umi.crazyhungry.party/script.js`). This is used for personal usage tracking. Users of this repository are advised to be aware of this and are free to remove or replace this line in the `generate_html` function within `iknow.py` if they do not wish to track their usage.
 
 ## Contributing 🤝
 
