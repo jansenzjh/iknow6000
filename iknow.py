@@ -51,6 +51,7 @@ def generate_html(data):
         <title>{data.get('title', 'iKnow! Goal')}</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
         <div><a href="index.html" class="home-button">Home</a></div>
@@ -168,6 +169,7 @@ if __name__ == "__main__":
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iKnow! Goals Index</title>
         <link rel="stylesheet" href="style.css">
+        <script defer src="https://umi.crazyhungry.party/script.js" data-website-id="8dfbf012-fa97-48ee-b0cd-7ba86851abf4"></script>
     </head>
     <body>
         <div class="container">
